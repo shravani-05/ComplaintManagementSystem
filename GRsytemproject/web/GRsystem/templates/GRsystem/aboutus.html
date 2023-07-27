@@ -1,0 +1,215 @@
+{% extends "GRsystem/index.html" %}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+{% block content %}
+
+
+<style>
+  
+  @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+p {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+body
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.section1{
+  width: 100%;
+  background-color: #251B37;  
+  color: bisque;
+}
+.section2{
+  width: 100%;
+  background-color: #FFECEF;
+  padding: 2%;
+  font-size: 15px;
+  border-radius: 7px;
+  height: 100%;
+
+}
+.section3{
+  width: 100%;
+  background-color: #FFECEF;
+  padding: 2%;
+  font-size: 15px;
+  border-radius: 7px;
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+ 
+  margin-bottom: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  margin-left: 15px;
+
+}
+
+</style>
+</style>
+<br>
+          {% load static %}
+          <div class="section2">
+            
+          
+    </div>
+    <br>
+    <div class="section0"> <h2 style="text-align: center;" >About Us!!!</h2> </div>
+    <br><br>
+    <div class="grid-item">
+      
+      <div class="section2">
+        <span><header><b>1. Ensuring required levels of safety :</b></header> </span>
+        <br><br>
+        <span>For highly regulated industries such as health care, chemicals, and consumer goods, customer complaints may indicate serious safety and regulatory compliance issues. Complaint management software can help optimise the complaint handling process and empower organisations to develop a safety management system to efficiently resolve customer complaints, while staying in line with industry guidelines and regulatory compliance obligations.</span>
+      </div>
+    </div>
+    <br><br>
+    <div class="grid-item"> <div class="section2">
+      <span><header><b>2.Fielding customer complaints while remaining compliant :</b></header> </span>
+      <br><br>
+   <span>Used in conjunction with a complaint management framework, an IT service management solution for dealing with customer complaints provides a powerful tool for your organisation to effectively manage clients’ issues, concerns and complaints, and increase customer satisfaction. By keeping complaint management in tune with all relevant regulatory compliance demands, a comprehensive complaint management solution also helps your organisation to mitigate risks.</span>
+    </div>  </div>
+    <br><br>
+    <div class="grid-item"> <div class="section2">
+      <span><header><b>3.Giving insights into your own customer service team :</b></header> </span>
+      <br><br>
+    <span>A complaint management solution with advanced reporting functionalities can give support managers insight into the performance of their support agents, which assists in quality control, workflow guidance, and other areas needed to optimise the performance of the customer service team.</span>
+  
+    </div>  </div>
+    <br><br>
+    <div class="grid-item">
+      <div class="section2">
+        <span><header><b>4. Providing further opportunities to improve :</b></header> </span>
+        <br><br>
+        <span>A secure cloud-based or in-house complaint management solution with centralised data management empowers your </span>
+        <span> management empowers your organisation to resolve customer complaints in a timely and efficient manner.Good support software</span>
+        <span> provides comprehensive control over your handling of customer queries,and the deployment of your support agents. This ultimately works to increase customer satisfaction retaining loyal customers  </span>
+        <span> and giving a pleasing customer experience to new ones.</span>    </div>
+    </div>
+    </div>
+    
+</div>
+<br>
+
+
+  {% endblock %}

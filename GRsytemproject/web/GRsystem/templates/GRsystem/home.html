@@ -1,0 +1,101 @@
+{% extends "GRsystem/index.html" %}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+{% block content %}
+<style>
+
+
+body {
+      			    margin-top: 6%;
+                margin-left: 10%;
+          			z-index: 1;
+          			top: -10%;
+          			left: -10%;
+          			background-repeat: no-repeat;
+          			background-position: center;
+          			transition: 1s;
+                position: absolute;
+                animation: animate 16s ease-in-out infinite;
+                background-size: cover;             
+                }
+              @keyframes animate{
+                0%,100%{
+                  background : url("/static/GRsystem/img/img1.jpg");
+                  width: 100%;
+          			height: 100vh;
+                background-size: cover;  
+                background-repeat: no-repeat;
+                }
+                25%{
+                  background : url("/static/GRsystem/img/img4.jpg");
+                  background-repeat: no-repeat;
+                  background-size: cover;  
+                  width: 100%;
+          			height: 100%;
+                }
+                50%{
+                  background : url("/static/GRsystem/img/img3.jpg");
+                  background-repeat: no-repeat;
+                  width: 100%;
+          			height: 100%;
+                background-size: cover;  
+
+                }
+                75%{
+                  background : url("/static/GRsystem/img/img5.jpg");
+                  background-repeat: no-repeat;
+                  width: 100%;
+          			height: 100%;
+                background-size: cover;  
+
+                }
+                
+                100%{
+                  background : url("/static/GRsystem/img/img7.jpg");
+                  background-repeat: no-repeat;
+                  width: 100%;
+          			height: 100%;
+                background-size: cover;  
+
+                }
+
+                 }
+
+                 body.open .background {
+          			filter: blur(20px);
+          		}
+img{
+  width:100%;
+  height:100%;
+}
+.card
+{
+  border:#007bff !important;
+}
+</style>
+          {% load static %}
+  
+
+<div >
+ <div class="ml-3">
+  <p style="color:rgb(0, 0, 0); font-size:40px;text-align: center;"> <b>Complaint Management System</b></p>
+        <p style="color:white; text-align:center;">
+</p>
+  </div>
+<br>
+
+</div>
+
+ {% load static %}
+ 
+
+
+  {% endblock %}
